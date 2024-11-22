@@ -1,0 +1,9 @@
+{
+	"name": "mylanadfdev",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8996d7a9-5e66-4c74-aec3-440a8e60ae11",
+		"tenantId": "8e849da3-9b8b-450d-8fe1-8fa18160c9dd"
+	}
+}
