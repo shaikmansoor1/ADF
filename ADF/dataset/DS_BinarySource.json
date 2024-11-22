@@ -1,0 +1,44 @@
+{
+	"name": "DS_BinarySource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragesource",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container_source": {
+				"type": "string"
+			},
+			"directory_source": {
+				"type": "string"
+			},
+			"File_name_source": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().File_name_source",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory_source",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().container_source",
+					"type": "Expression"
+				}
+			},
+			"compression": {
+				"type": "ZipDeflate",
+				"level": "Optimal"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
