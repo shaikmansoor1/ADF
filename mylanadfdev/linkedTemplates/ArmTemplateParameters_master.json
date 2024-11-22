@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "mylanadfdev"
+		},
+		"AzureDataLakeStoragesink_properties_typeProperties_url": {
+			"value": "https://mylandatalakesink.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStoragesink_properties_typeProperties_tenant": {
+			"value": "8e849da3-9b8b-450d-8fe1-8fa18160c9dd"
+		},
+		"AzureDataLakeStoragesink_properties_typeProperties_servicePrincipalId": {
+			"value": "2383315a-ad66-4031-8820-31e13c9d13b0"
+		},
+		"AzureDataLakeStoragesource_properties_typeProperties_url": {
+			"value": "https://mylandatalakedev.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStoragesource_properties_typeProperties_tenant": {
+			"value": "8e849da3-9b8b-450d-8fe1-8fa18160c9dd"
+		},
+		"AzureDataLakeStoragesource_properties_typeProperties_servicePrincipalId": {
+			"value": "2383315a-ad66-4031-8820-31e13c9d13b0"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://mylanvaultdev.vault.azure.net/"
+		},
+		"AzureSqlDatabaseSource_properties_typeProperties_server": {
+			"value": "mylandbdev.database.windows.net"
+		},
+		"AzureSqlDatabaseSource_properties_typeProperties_database": {
+			"value": "mylandbdev"
+		},
+		"AzureSqlDatabaseSource_properties_typeProperties_userName": {
+			"value": "gopalanadmin"
+		},
+		"RestService_properties_typeProperties_url": {
+			"value": "https://airlabs.co/api/v9/airlines"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
